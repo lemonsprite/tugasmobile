@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class ProdukForm extends StatefulWidget {
   @override
   _ProdukFormState createState() => _ProdukFormState();
 }
+
 class _ProdukFormState extends State<ProdukForm> {
   @override
   Widget build(BuildContext context) {
@@ -23,9 +23,13 @@ class _ProdukFormState extends State<ProdukForm> {
             ),
             TextField(
               decoration: InputDecoration(labelText: "Harga"),
+            ),
+            RaisedButton(
+              child: Text('Simpan'),
+              onPressed: () {},
             )
           ],
-        ),
+        )
       )
     );
   }
